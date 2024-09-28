@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>網頁時鐘</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #283a2c;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        /* 容器，包裹日曆和時鐘 */
+        .container {
+            display: flex;
+            flex-direction: row; /* 預設為左右排列 */
+            align-items: center;
+            justify-content: center;
+            position: relative; /* 相對定位，便於絕對定位的元素 */
+        }
+
+        /* 日曆部分 */
+        .calendar {
+            text-align: center;
+            color: #b39363;
+            font-family: 'Indie Flower', cursive;
+            font-weight: bold;
+            margin-right: 20px; /* 給日曆和時鐘之間一些距離 */
+        }
+
+        .calendarcircle {
+            width: 600px;  /* 圓形的直徑 */
+            height: 600px; /* 圓形的直徑 */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #day {
+            font-size: 200px;
+            margin: -70px 5px; 
+        }
+
+        #month {
+            font-size: 72px;
+            margin: -30px 5px; 
+        }
+
+        #year {
+            font-size: 72px;
+            margin: -30px 5px; 
+        }
+
+        /* 時鐘部分 */
+        #clock {
+            width: 600px;
+            height: 600px;
+        }
+
+        /* 時鐘的其他樣式... */
+        /* 您的原始代碼保持不變 */
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column; /* 在小螢幕上垂直排列 */
+                align-items: center; /* 確保元素居中 */
+            }
+            #clock {
+                margin-top: 20px; /* 加一點距離 */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="calendarcircle">
+            <svg width="600" height="600">
+                <circle cx="300" cy="300" r="199" 
+                        fill="none" 
+                        stroke="#c8a679" 
+                        stroke-width="10" 
+                        stroke-dasharray="1, 20,1,40,1,20,1,20" 
+                        stroke-linecap="round" />
+            </svg>
+            <div class="calendar">
+                <div id="year"></div>
+                <div id="month"></div>
+                <div id="day"></div>
+            </div>
+        </div>
+        <div id="clock">
+            <svg width="100%" height="100%" viewBox="0 0 300 300">
+                <rect id="square" x="50" y="50" width="200" height="200" transform="rotate(45 150 150)" rx="5" ry="5" />
+                <circle class="circle" cx="150" cy="150" r="95"></circle>
+                <circle class="circle2" cx="150" cy="150" r="95"></circle>
+                <polygon id="triangle" points="150,60 230,195 70,195" stroke-linecap="round"></polygon>
+                <circle id="innerCircle" cx="150" cy="150" r="45"></circle>
+                <line id="hourHand" x1="150" y1="150" x2="150" y2="108" stroke-linecap="round"></line>
+                <line id="minuteHand" x1="150" y1="150" x2="150" y2="63" stroke-linecap="round"></line>
+                <line id="secondHand" x1="150" y1="150" x2="150" y2="11" stroke-linecap="round"></line>
+            </svg>
+            <div class="edit-time" id="editTime">
+                <button id="openModalBtn">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                </button>
+            </div>
+
+            <!-- 模態框 -->
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <h2 class="title">時間調整</h2>
+                    <form id="timeForm">
+                        <input type="number" id="hours" name="hours" min="1" max="12" placeholder="HH" required>
+                        <label for="hours">時</label>
+                        <input type="number" id="minutes" name="minutes" min="0" max="59" placeholder="MM" required>
+                        <label for="minutes">分</label>
+                        <input type="number" id="seconds" name="seconds" min="0" max="59" placeholder="SS" required>
+                        <label for="seconds">秒</label>
+                        <button type="submit" class="button fa-solid fa-check"></button>
+                        <button class="button fa-solid fa-xmark" id="closeModalBtn"></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // 日曆和時鐘更新的 JavaScript 代碼保持不變...
+    </script>
+</body>
+</html>

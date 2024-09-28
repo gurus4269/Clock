@@ -1,0 +1,232 @@
+body {
+    background-color: #283a2c;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+/* 容器，包裹日曆和時鐘 */
+.container {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: center;
+    position: relative; /* 相對定位，便於絕對定位的元素 */
+}
+
+/* 日曆部分 */
+.calendar {
+    position: absolute; /* 設定為絕對定位 */
+    text-align: center;
+    color:#b39363;
+    font-family: 'Indie Flower', cursive;
+    font-weight:bold;
+    top: 50%; /* 垂直居中 */
+    left: 50%; /* 水平居中 */
+    transform: translate(-50%, -50%); /* 調整中心 */
+}
+
+.calendarcircle{
+    width: 600px;  /* 圓形的直徑 */
+    height: 600px; /* 圓形的直徑 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 60px; /* 向左移動 */
+    top: -130px;
+}
+
+#day {
+    font-size: 200px;
+    margin: -70px 5px; 
+}
+
+#month {
+    font-size: 72px;
+    margin: -30px 5px; 
+}
+
+#year {
+    font-size: 72px;
+    margin: -30px 5px; 
+}
+
+/* 時鐘部分 */
+#clock {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    right: 60px; /* 向右移動 */
+}
+
+/* 最外層正方形 */
+#square {
+    fill: none;
+    stroke: #b39363;
+    stroke-width: 4; 
+}
+
+/* 第一個內切圓 */
+.circle {
+    fill: none;
+    stroke: #b39363;
+    stroke-width: 4;
+    stroke-dasharray:0.5, 9,0.5, 20.7,0.5, 9,0.5, 9;
+    stroke-linecap:round;
+    transform-origin: 50% 50%; /* 设置旋转中心为元素的中心 */
+    transform: rotate(18deg);
+}
+.circle2 {
+    fill: none;
+    stroke: #ff0000;
+    stroke-width: 4;
+    stroke-dasharray:0.5 49.74;
+    stroke-linecap:round;
+    transform-origin: 50% 50%; /* 设置旋转中心为元素的中心 */
+    transform: rotate(27.4deg);
+
+}
+
+/* 內接正三角形 */
+#triangle {
+    fill: none;
+    stroke: #b39363;
+    stroke-width: 4; 
+}
+
+/* 第二個內切圓 */
+#innerCircle {
+    fill: none;
+    stroke: #b39363;
+    stroke-width: 4; 
+}
+
+.lineinner{
+    stroke: #283a2c;
+    stroke-width: 3;
+}
+
+/* 秒針 */
+#secondHand {
+    stroke: #b39363;
+    stroke-width: 7;
+}
+
+/* 分針 */
+#minuteHand {
+    stroke: #b39363;
+    stroke-width: 7;
+}
+
+/* 時針 */
+#hourHand {
+    stroke: #b39363;
+    stroke-width: 7;
+}
+.edit-time {
+    position: absolute;
+    bottom: -50px;
+    right: 0;
+    cursor: pointer;
+}
+/* 視窗的背景樣式 */
+.modal {
+    display: none; /* 初始隱藏 */
+    position: fixed; /* 固定位置 */
+    z-index: 1; /* 保證在其他內容上方 */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 視窗內容的樣式 */
+.modal-content {
+    background-color: #967a50;
+    padding: 20px;
+    border-radius: 20px;
+    height : 250px;
+    width: 450px;
+    text-align: center;
+}
+
+.title {
+    text-align: left;
+    vertical-align: top;
+    margin-top: 0%;
+}
+
+/* 表單元素樣式 */
+input[type="number"] {
+    width: 70px;
+    height: 40px;
+    padding: 5px;
+    margin: 5px;
+    font-size: 32px;
+    text-align: center;
+    border-radius: 10px;
+    background-color : #d7c7ad;
+    border: none;
+}
+
+/* 關閉和送出按鈕樣式 */
+.button {
+    width: 60px;
+    height: 35px;
+    background-color: #a7895c;
+    color: #524025;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    border-color: rgba(0, 0, 0, 0.508);
+    border-width: 2px;
+    margin: 30px 5px; /* 新增左右邊距 */
+    float: right;
+}
+
+#openModalBtn {
+    width: 100px;
+    height : 100px;
+    background: none;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    margin: 15px 5px; /* 新增左右邊距 */
+    float: right;
+}
+.fa-pen-to-square
+{
+    font-size: 48px;
+    color: #b39363;
+}
+.fa-xmark{
+    font-size: 36px;
+    padding:0%;
+}
+
+.fa-check{
+    font-size: 36px;
+    padding:0%;
+}
+@media (max-width: 1200px) {
+    .container {
+        flex-direction: column; /* 在小螢幕上垂直排列 */
+        align-items: center; /* 確保元素居中 */
+        margin-top: 200px;
+    }
+    .calendarcircle{
+        left: 0px; /* 向左移動 */
+        top: 0px;
+    }
+
+    #clock {
+        margin-top: 20px; /* 加一點距離 */
+        right:0px;
+    }
+}

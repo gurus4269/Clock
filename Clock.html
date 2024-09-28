@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>網頁時鐘</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="ClockCSS.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="calendarcircle">
+            <div class="calendar">
+                <div id="year"></div>
+                <div id="month"></div>
+                <div id="day"></div>
+            </div>
+            <!-- 使用SVG來繪製圓圈 -->
+            <svg width="600" height="600">
+                <circle cx="300" cy="300" r="199" 
+                        fill="none" 
+                        stroke="#c8a679" 
+                        stroke-width="10" 
+                        stroke-dasharray="1, 20,1,40,1,20,1,20" 
+                        stroke-linecap="round" />
+            </svg>
+        </div>
+        <!-- 時鐘部分 -->
+        <div id="clock">
+            <svg width="100%" height="100%" viewBox="0 0 300 300">
+                
+                <!-- 最外層正方形
+                <polygon id="square" points="8.58,150 150,8.58 291.42,150 150,291.42" ></polygon> -->
+                <rect id="square" x="50" y="50" width="200" height="200" transform="rotate(45 150 150)" rx="5" ry="5" />
+                
+                <!-- 第一個內切圓 -->
+                <circle class="circle" cx="150" cy="150" r="95"></circle>
+                <circle class="circle2" cx="150" cy="150" r="95"></circle>
+
+                <!-- 內接正三角形 -->
+                <polygon id="triangle" points="150,60 230,195 70,195" stroke-linecap="round"></polygon>
+                
+                <!-- 第二個內切圓 -->
+                <circle id="innerCircle" cx="150" cy="150" r="45"></circle>
+
+                <!-- 時針 -->
+                <line id="hourHand" x1="150" y1="150" x2="150" y2="108" stroke-linecap="round"></line> 
+                <line id="hourHandinner" class="lineinner" x1="150" y1="150" x2="150" y2="104" stroke-linecap="round"></line>
+                
+                <!-- 分針 -->
+                <line id="minuteHand" x1="150" y1="150" x2="150" y2="63"stroke-linecap="round"></line>
+                <line id="minuteHandinner" class="lineinner" x1="150" y1="150" x2="150" y2="58.2"stroke-linecap="round"></line>
+
+                <!-- 秒針 -->
+                <line id="secondHand" x1="150" y1="150" x2="150" y2="11"stroke-linecap="round"></line>
+                <line id="secondHandinner"class="lineinner" x1="150" y1="150" x2="150" y2="7"stroke-linecap="round"></line>
+            </svg>
+            <div class="edit-time" id="editTime">
+                <button id="openModalBtn">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                </button>
+            </div>
+
+            <!-- 模態框 -->
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <h2 class = "title">時間調整</h2>
+                    <br>
+                    <!-- 表單開始 -->
+                    <form id="timeForm">
+                        <input type="number" id="hours" name="hours" min="1" max="12" placeholder="HH" required>
+                        <label for="hours">時</label>
+                        
+                        <input type="number" id="minutes" name="minutes" min="0" max="59" placeholder="MM" required>
+                        <label for="minutes">分</label>
+                        
+                        <input type="number" id="seconds" name="seconds" min="0" max="59" placeholder="SS" required>
+                        <label for="seconds">秒</label>
+                        <br><br><br>
+                        <button type="submit" class="button fa-solid fa-check"></button>
+                        <button class="button fa-solid fa-xmark" id="closeModalBtn"></button>
+                        
+                    </form>
+                    <!-- 表單結束 -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="ClockScript.js"></script>
+</body>
+</html>
