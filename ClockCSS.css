@@ -5,37 +5,39 @@ body {
     align-items: center;
     height: 100vh;
     font-family: Arial, sans-serif;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><rect x="950" y="250" width="400" height="400" transform="rotate(35 150 150)" rx="5" ry="5" fill="none" stroke="%2300000030" stroke-width="32" transform-origin=" 50% 50%"/><circle  cx="450" cy="550" r="120" fill="none" stroke="%2300000030" stroke-width="32"></circle><circle  cx="900" cy="500" r="75" fill="none" stroke="%2300000030" stroke-width="16"></circle><circle  cx="1800" cy="550" r="105" fill="none" stroke="%2300000030" stroke-width="24"></circle><circle  cx="1600" cy="400" r="220" fill="none" stroke="%2300000030" stroke-width="12" stroke-dasharray="2, 18,2, 40,2, 18,2, 18" stroke-linecap="round"></circle><g transform="translate(600, 230)"><path  d="M192 512C86 512 0 426 0 320C0 228.8 130.2 57.7 166.6 11.7C172.6 4.2 181.5 0 191.1 0l1.8 0c9.6 0 18.5 4.2 24.5 11.7C253.8 57.7 384 228.8 384 320c0 106-86 192-192 192zM96 336c0-8.8-7.2-16-16-16s-16 7.2-16 16c0 61.9 50.1 112 112 112c8.8 0 16-7.2 16-16s-7.2-16-16-16c-44.2 0-80-35.8-80-80z" transform="scale(0.08, 0.08) rotate(180)" fill="%2300000030" /></g><g transform="translate(720, 260)"><path  d="M192 512C86 512 0 426 0 320C0 228.8 130.2 57.7 166.6 11.7C172.6 4.2 181.5 0 191.1 0l1.8 0c9.6 0 18.5 4.2 24.5 11.7C253.8 57.7 384 228.8 384 320c0 106-86 192-192 192zM96 336c0-8.8-7.2-16-16-16s-16 7.2-16 16c0 61.9 50.1 112 112 112c8.8 0 16-7.2 16-16s-7.2-16-16-16c-44.2 0-80-35.8-80-80z" transform="scale(0.08, 0.08) rotate(210)" fill="%2300000030"/></g><g transform="translate(800, 350)"><path  d="M192 512C86 512 0 426 0 320C0 228.8 130.2 57.7 166.6 11.7C172.6 4.2 181.5 0 191.1 0l1.8 0c9.6 0 18.5 4.2 24.5 11.7C253.8 57.7 384 228.8 384 320c0 106-86 192-192 192zM96 336c0-8.8-7.2-16-16-16s-16 7.2-16 16c0 61.9 50.1 112 112 112c8.8 0 16-7.2 16-16s-7.2-16-16-16c-44.2 0-80-35.8-80-80z" transform="scale(0.08, 0.08) rotate(240)" fill="%2300000030"/></g><g transform="translate(830.0, 460.0)"><path  d="M192 512C86 512 0 426 0 320C0 228.8 130.2 57.7 166.6 11.7C172.6 4.2 181.5 0 191.1 0l1.8 0c9.6 0 18.5 4.2 24.5 11.7C253.8 57.7 384 228.8 384 320c0 106-86 192-192 192zM96 336c0-8.8-7.2-16-16-16s-16 7.2-16 16c0 61.9 50.1 112 112 112c8.8 0 16-7.2 16-16s-7.2-16-16-16c-44.2 0-80-35.8-80-80z" transform="scale(0.08, 0.08) rotate(270)" fill="%2300000030"/></g><g transform="translate(770, 570)"><path  d="M192 512C86 512 0 426 0 320C0 228.8 130.2 57.7 166.6 11.7C172.6 4.2 181.5 0 191.1 0l1.8 0c9.6 0 18.5 4.2 24.5 11.7C253.8 57.7 384 228.8 384 320c0 106-86 192-192 192zM96 336c0-8.8-7.2-16-16-16s-16 7.2-16 16c0 61.9 50.1 112 112 112c8.8 0 16-7.2 16-16s-7.2-16-16-16c-44.2 0-80-35.8-80-80z" transform="scale(0.08, 0.08) rotate(300)" fill="%2300000030"/></g><g transform="translate(700, 660)"><path  d="M192 512C86 512 0 426 0 320C0 228.8 130.2 57.7 166.6 11.7C172.6 4.2 181.5 0 191.1 0l1.8 0c9.6 0 18.5 4.2 24.5 11.7C253.8 57.7 384 228.8 384 320c0 106-86 192-192 192zM96 336c0-8.8-7.2-16-16-16s-16 7.2-16 16c0 61.9 50.1 112 112 112c8.8 0 16-7.2 16-16s-7.2-16-16-16c-44.2 0-80-35.8-80-80z" transform="scale(0.08, 0.08) rotate(330)" fill="%2300000030"/></g><g transform="translate(575.0, 690.0)"><path  d="M192 512C86 512 0 426 0 320C0 228.8 130.2 57.7 166.6 11.7C172.6 4.2 181.5 0 191.1 0l1.8 0c9.6 0 18.5 4.2 24.5 11.7C253.8 57.7 384 228.8 384 320c0 106-86 192-192 192zM96 336c0-8.8-7.2-16-16-16s-16 7.2-16 16c0 61.9 50.1 112 112 112c8.8 0 16-7.2 16-16s-7.2-16-16-16c-44.2 0-80-35.8-80-80z" transform="scale(0.08, 0.08) rotate(0)" fill="%2300000030"/></g><g transform="translate(460, 650)"><path  d="M192 512C86 512 0 426 0 320C0 228.8 130.2 57.7 166.6 11.7C172.6 4.2 181.5 0 191.1 0l1.8 0c9.6 0 18.5 4.2 24.5 11.7C253.8 57.7 384 228.8 384 320c0 106-86 192-192 192zM96 336c0-8.8-7.2-16-16-16s-16 7.2-16 16c0 61.9 50.1 112 112 112c8.8 0 16-7.2 16-16s-7.2-16-16-16c-44.2 0-80-35.8-80-80z" transform="scale(0.08, 0.08) rotate(30)" fill="%2300000030"/></g><g transform="translate(380, 550)"><path  d="M192 512C86 512 0 426 0 320C0 228.8 130.2 57.7 166.6 11.7C172.6 4.2 181.5 0 191.1 0l1.8 0c9.6 0 18.5 4.2 24.5 11.7C253.8 57.7 384 228.8 384 320c0 106-86 192-192 192zM96 336c0-8.8-7.2-16-16-16s-16 7.2-16 16c0 61.9 50.1 112 112 112c8.8 0 16-7.2 16-16s-7.2-16-16-16c-44.2 0-80-35.8-80-80z" transform="scale(0.08, 0.08) rotate(60)" fill="%2300000030"/></g><g transform="translate(370.0, 425.0)"><path  d="M192 512C86 512 0 426 0 320C0 228.8 130.2 57.7 166.6 11.7C172.6 4.2 181.5 0 191.1 0l1.8 0c9.6 0 18.5 4.2 24.5 11.7C253.8 57.7 384 228.8 384 320c0 106-86 192-192 192zM96 336c0-8.8-7.2-16-16-16s-16 7.2-16 16c0 61.9 50.1 112 112 112c8.8 0 16-7.2 16-16s-7.2-16-16-16c-44.2 0-80-35.8-80-80z" transform="scale(0.08, 0.08) rotate(90)" fill="%2300000030"/></g><g transform="translate(410, 320)"><path  d="M192 512C86 512 0 426 0 320C0 228.8 130.2 57.7 166.6 11.7C172.6 4.2 181.5 0 191.1 0l1.8 0c9.6 0 18.5 4.2 24.5 11.7C253.8 57.7 384 228.8 384 320c0 106-86 192-192 192zM96 336c0-8.8-7.2-16-16-16s-16 7.2-16 16c0 61.9 50.1 112 112 112c8.8 0 16-7.2 16-16s-7.2-16-16-16c-44.2 0-80-35.8-80-80z" transform="scale(0.08, 0.08) rotate(120)" fill="%2300000030"/></g><g transform="translate(500, 250)"><path  d="M192 512C86 512 0 426 0 320C0 228.8 130.2 57.7 166.6 11.7C172.6 4.2 181.5 0 191.1 0l1.8 0c9.6 0 18.5 4.2 24.5 11.7C253.8 57.7 384 228.8 384 320c0 106-86 192-192 192zM96 336c0-8.8-7.2-16-16-16s-16 7.2-16 16c0 61.9 50.1 112 112 112c8.8 0 16-7.2 16-16s-7.2-16-16-16c-44.2 0-80-35.8-80-80z" transform="scale(0.08, 0.08) rotate(150)" fill="%2300000030"/></g></svg>');
 }
 
-/* 容器，包裹日曆和時鐘 */
+/*放日曆、時鐘的容器*/
 .container {
     display: flex;
     flex-direction: row; 
     align-items: center;
     justify-content: center;
-    position: relative; /* 相對定位，便於絕對定位的元素 */
+    position: relative;
+    color: #00000071;
 }
 
-/* 日曆部分 */
+/*日曆部分*/
 .calendar {
-    position: absolute; /* 設定為絕對定位 */
+    position: absolute;
     text-align: center;
     color:#b39363;
     font-family: 'Indie Flower', cursive;
     font-weight:bold;
-    top: 50%; /* 垂直居中 */
-    left: 50%; /* 水平居中 */
-    transform: translate(-50%, -50%); /* 調整中心 */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-
+/*日曆外面的圈圈*/
 .calendarcircle{
-    width: 600px;  /* 圓形的直徑 */
-    height: 600px; /* 圓形的直徑 */
+    width: 600px;
+    height: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    left: 60px; /* 向左移動 */
+    left: 60px;
     top: -130px;
 }
 
@@ -54,89 +56,77 @@ body {
     margin: -30px 5px; 
 }
 
-/* 時鐘部分 */
+/*時鐘部分*/
 #clock {
     position: relative;
     width: 600px;
     height: 600px;
-    right: 60px; /* 向右移動 */
+    right: 60px;
 }
 
-/* 最外層正方形 */
+/*最外層正方形*/
 #square {
     fill: none;
     stroke: #b39363;
     stroke-width: 4; 
 }
 
-/* 第一個內切圓 */
+/*第一個內切圓*/
 .circle {
     fill: none;
     stroke: #b39363;
     stroke-width: 4;
     stroke-dasharray:0.5, 9,0.5, 20.7,0.5, 9,0.5, 9;
     stroke-linecap:round;
-    transform-origin: 50% 50%; /* 设置旋转中心为元素的中心 */
+    transform-origin: 50% 50%;
     transform: rotate(18deg);
 }
-.circle2 {
-    fill: none;
-    stroke: #ff0000;
-    stroke-width: 4;
-    stroke-dasharray:0.5 49.74;
-    stroke-linecap:round;
-    transform-origin: 50% 50%; /* 设置旋转中心为元素的中心 */
-    transform: rotate(27.4deg);
-
+/*水滴*/
+.drop {
+    fill: #b39363; 
 }
 
-/* 內接正三角形 */
+/*內接正三角形*/
 #triangle {
     fill: none;
     stroke: #b39363;
     stroke-width: 4; 
 }
 
-/* 第二個內切圓 */
+/*第二個內切圓*/
 #innerCircle {
     fill: none;
     stroke: #b39363;
     stroke-width: 4; 
 }
-
+/*指針中空效果*/
 .lineinner{
     stroke: #283a2c;
     stroke-width: 3;
 }
 
-/* 秒針 */
+/*秒針*/
 #secondHand {
     stroke: #b39363;
     stroke-width: 7;
 }
 
-/* 分針 */
+/*分針*/
 #minuteHand {
     stroke: #b39363;
     stroke-width: 7;
 }
 
-/* 時針 */
+/*時針*/
 #hourHand {
     stroke: #b39363;
     stroke-width: 7;
 }
-.edit-time {
-    position: absolute;
-    bottom: -50px;
-    right: 0;
-    cursor: pointer;
-}
-/* 視窗的背景樣式 */
+/*視窗的背景樣式*/
 .modal {
-    display: none; /* 初始隱藏 */
-    position: fixed; /* 固定位置 */
-    z-index: 1; /* 保證在其他內容上方 */
+    display: none;
+    position: fixed;
+    z-index: 1;
     left: 0;
     top: 0;
     width: 100%;
@@ -145,7 +135,7 @@ body {
     align-items: center;
 }
 
-/* 視窗內容的樣式 */
+/*視窗內容的樣式*/
 .modal-content {
     background-color: #967a50;
     padding: 20px;
@@ -154,14 +144,14 @@ body {
     width: 450px;
     text-align: center;
 }
-
+/*視窗標題*/
 .title {
     text-align: left;
     vertical-align: top;
     margin-top: 0%;
 }
 
-/* 表單元素樣式 */
+/*表單*/
 input[type="number"] {
     width: 70px;
     height: 40px;
@@ -174,7 +164,7 @@ input[type="number"] {
     border: none;
 }
 
-/* 關閉和送出按鈕樣式 */
+/*關閉和送出按鈕*/
 .button {
     width: 60px;
     height: 35px;
@@ -188,7 +178,7 @@ input[type="number"] {
     margin: 30px 5px; /* 新增左右邊距 */
     float: right;
 }
-
+/*彈出視窗的按鈕*/
 #openModalBtn {
     width: 100px;
     height : 100px;
@@ -200,33 +190,38 @@ input[type="number"] {
     margin: 15px 5px; /* 新增左右邊距 */
     float: right;
 }
+/*edit的icon*/
 .fa-pen-to-square
 {
     font-size: 48px;
     color: #b39363;
 }
+/*叉叉的icon*/
 .fa-xmark{
     font-size: 36px;
     padding:0%;
 }
-
+/*勾勾的icon*/
 .fa-check{
     font-size: 36px;
     padding:0%;
 }
+
+/*自適應
+  畫面縮小時改成上下排列*/
 @media (max-width: 1200px) {
     .container {
-        flex-direction: column; /* 在小螢幕上垂直排列 */
-        align-items: center; /* 確保元素居中 */
+        flex-direction: column; 
+        align-items: center; 
         margin-top: 200px;
     }
     .calendarcircle{
-        left: 0px; /* 向左移動 */
+        left: 0px; 
         top: 0px;
     }
 
     #clock {
-        margin-top: 20px; /* 加一點距離 */
+        margin-top: 20px; 
         right:0px;
     }
 }
